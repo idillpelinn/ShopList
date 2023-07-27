@@ -1,0 +1,26 @@
+
+.menu-bars {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .menu-bars svg {
+    font-size: 40px;
+  }
+  
+  .menu-bars:hover svg {
+    transform: scale(1.3); /* Mouse üzerine gelince icon boyutu */
+    
+  }
+  
+  .menu-bars:hover svg path {
+    fill: #A7BFF8; /* Mouse üzerine gelince icon rengi */
+  }
+  
+  .menu-bars:hover {
+    text-decoration: none; /* Mouse üzerine gelince altı çizili çıkart */
+    color:#A7BFF8
+  }
+  

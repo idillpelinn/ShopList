@@ -1,0 +1,35 @@
+.list {
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  background-color: #6c757d;
+  color: black;
+}
+
+.list:hover {
+  background-color: gray;
+}
+
+.list.active {
+  background-color: #a7bff8;
+  color: white;
+}
+
+#baslik {
+  margin-bottom: 0.4rem;
+  font-weight: lighter;
+  color: #a7bff8;
+  text-align: center;
+  font-size: large;
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #a7bff8;
+
+  transition: transform 0.2s ease-in-out;
+}
+
+.icon:hover {
+  transform: scale(1.3);
+}
