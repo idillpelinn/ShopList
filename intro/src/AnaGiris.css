@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lobster");
 body {
-  background: #6b5b95 
-    url(https://media.giphy.com/media/5c4cHATt717ZAN9gbc/giphy.gif) no-repeat
-    center right fixed;
+  background-color: white;
   background-position: 90% center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
