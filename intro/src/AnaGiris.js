@@ -4,29 +4,33 @@ import { GiMagicLamp } from "react-icons/gi";
 import { Link } from "react-router-dom";
 
 export default class AnaGiris extends Component {
-   refreshPage() {
+  refreshPage() {
     window.location.reload();
   }
   
   render() {
     return (
-      <div class="sp-container">
-        
-        <div class="sp-content">
-          <div class="sp-globe"></div>
-         
-          <h2 class="frame-5">
+      <div className="sp-container">
+        <div className="sp-header">
+          <Link className="sp-link" to="/" onClick={this.refreshPage} >
+            <GiMagicLamp size={50} />
+            </Link>
+            <h2> GROCENY-GENIE</h2>
+             
+            </div>
             
-            <span>GROCENY</span>
-            <span>GENIE</span>
-          </h2>
-          <Link class="sp-circle-link" to="/" onClick={this.refreshPage}>
-  <GiMagicLamp size={50} />
-</Link>
+           <p>
+              Alışverişte yardımcı asistanın! 
+              Listeni oluştur ve notlarını ekle böylece 
+              alışverişini daha hızlı halletmiş olacaksın.
+            </p>
 
-         <div> <Link className="uyelink" to="/uye">Üye Ol</Link></div>
-          <div><Link className="girislink" to="/giris">Giriş Yap </Link></div>
-        </div>
+          
+        <div className="sp-body"> 
+          <Link className="uyelink" to="/uye">Üye Ol</Link>
+          <Link className="girislink" to="/giris">Giriş Yap</Link>
+          </div>
+       
       </div>
     );
   }
